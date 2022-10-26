@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Drawing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <label class="title">Formas</label>
+                <ul class="options">
+                     <li class="option">
+                        <img src="icons/icons/rectangle.svg" alt="">
+                        <span>Retângulo </span>
+                    </li>
+                    <li class="option">
+                        <img src="icons/icons/circle.svg" alt="">
+                        <span>Circulo </span>
+                    </li>
+                    <li class="option">
+                        <img src="icons/icons/triangle.svg" alt="">
+                        <span>Triângulo</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill Color">
+                        <label for="fill Color">Preenchimento</label>
+                    </li>
+                </ul>
+             </div>
+             <div class="row">
+                <label class="title">Opções</label>
+                <ul class="options">
+                     <li class="option active">
+                        <img src="icons/icons/brush.svg" alt="">
+                        <span>Pincel</span>
+                    </li>
+                    <li class="option">
+                        <img src="icons/icons/eraser.svg" alt="">
+                        <span>Borracha </span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider">
+                    </li>
+                </ul>
+             </div>
+             <div class="row colors">
+                <label class="title">Cores</label>
+                <ul class="options">
+                     <li class="option"></li>
+                     <li class="option selected"></li>
+                     <li class="option"></li>
+                     <li class="option"></li>
+                     <li class="option">  
+                        <input type="color" id="color-picker" value="#4A98F7">
+                    </li>   
+                    </ul>
+             </div>
+             <div class="row buttons">
+               <button class="clear-canvas">Limpar tudo </button>
+               <button class="save-img">Salvar desenho </button>
+             </div>
+         </section>
+         <section class="drawing-board"></section>
+    </div>
+</body>
+</html>
